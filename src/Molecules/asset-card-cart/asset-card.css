@@ -1,0 +1,48 @@
+.asset-card {
+  overflow: hidden;
+}
+
+.asset-hover-card {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  /* background: #004283; */
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: top 1s;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.asset-card:hover .asset-hover-card {
+  top: 0;
+}
+
+/* @media screen and (max-width: 1200px) {
+  .asset-card {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .asset-card {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .asset-card {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .asset-card {
+    width: 70vw;
+  }
+} */

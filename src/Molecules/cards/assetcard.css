@@ -1,0 +1,21 @@
+.fieldstyle {
+    fontFamily: "Inter";
+    fontSize: "12px";
+    fontWeight: 500;
+    lineHeight: "14.8px";
+    textAlign: "center";
+    color: 'rgba(51, 51, 51, 1)';
+    margin: 0;
+    letterSpacing: "0.02em";
+}
+
+.valuestyle {
+    fontFamily: "Inter";
+    fontSize: "14px";
+    fontWeight: 500;
+    lineHeight: "14.8px";
+    textAlign: "center";
+    color: 'rgba(51, 51, 51, 1)';
+    margin: 0;
+    letterSpacing: "0.02em";
+}

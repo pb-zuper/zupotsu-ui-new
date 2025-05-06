@@ -1,0 +1,4 @@
+.rmdp-container {
+    display: block !important; /* Override the inline-block display */
+    width: 100%;
+}

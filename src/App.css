@@ -1,0 +1,246 @@
+.App {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* styles.css */
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('./fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+
+.custom-datepicker {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 35px; /* Adjust padding to make room for the icon */
+  box-sizing: border-box; /* Ensure padding is included in height and width */
+  font-size: 16px; /* Adjust font size as needed */
+  outline: none; /* Remove default outline */
+}
+
+.custom-datepicker-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  height: 100%;
+  padding: 8px; /* Match padding with the parent div */
+  padding-left: 35px; /* Add padding to the left to accommodate the icon */
+  box-sizing: border-box; /* Ensure input fits within the container */
+  font-size: 16px; /* Ensure input font matches overall design */
+}
+
+
+
+.calendar-icon {
+  position: absolute;
+  left: 10px; /* Adjust positioning as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px; /* Adjust size of the icon */
+  color: #333; /* Change color if needed */
+  pointer-events: none; /* Prevent the icon from interfering with input clicks */
+}
+
+
+
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #E10B17; /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.centered-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4); 
+  z-index: 1000;  */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4); 
+  z-index: 0;
+}
+
+.rmdp-panel-body li, .rmdp-panel-body li.bg-red {
+  background-color: #E22B16 !important;
+}
+
+.rmdp-panel-body li .b-deselect {
+  background-color: #E22B16 !important;
+  border: none;
+  font-size: 17px;
+}
+.rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: #E22B16 !important;
+  box-shadow: 0 0 3px #8798ad;
+  color: #fff;
+}
+
+.rmdp-ym .rmdp-day  :hover {
+  background-color:  rgba(226, 43, 22 ,0.5) !important;
+  box-shadow: 0 0 3px #8798ad;
+  color: #fff;
+}
+
+.rmdp-day.rmdp-today span {
+  background-color: rgba(226, 43, 22 ,0.5) !important;
+  color: #fff;
+}
+
+.rmdp-input::placeholder {
+  color: #ACACAC; /* Change this to your desired color */
+  opacity: 1; /* Ensures the color is applied fully */
+}
+
+.css-vi0rn4-MuiAutocomplete-root .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+  padding: 2.5px 4px 2.5px 8px;
+  cursor: pointer !important;
+}
+.css-aamevc-MuiAutocomplete-root .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+  padding: 2.5px 4px 2.5px 8px;
+  cursor: pointer;
+}
+.css-2o6zzo-MuiAutocomplete-root .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+  padding: 2.5px 4px 2.5px 8px;
+  cursor: pointer;
+}
+.otp-input {
+  width: 50px;
+  height: 55px;
+  border-radius: 6px;
+  border: 0.8px solid #ccc;
+  text-align: center;
+}
+
+input.otp-input:focus {
+  border: 2px solid #E22B16 !important;
+}
+
+.my-div {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: top 0.3s;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: white; /* Optional: Set a background */
+}
+
+
+
+
+/* Default state when the component is entering or exiting */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+
+.centered-container-catalouge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: fixed; /* Fixes it in place */
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4); 
+  z-index: 0; /* Optional: to ensure it overlays other content */
+}
+
+.centered-container-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4); 
+  z-index: 0; /* Optional: to ensure it overlays other content */
+}

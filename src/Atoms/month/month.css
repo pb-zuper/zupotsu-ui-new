@@ -1,0 +1,45 @@
+.popover {
+    font-family: "Inter";
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    left: 50%;
+    width: 250px;
+    height: 220px;
+  }
+  
+  .popover-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .popover-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  
+  .month-btn {
+    padding: 5px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .month-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .month-btn.selected {
+    background-color:#E12619;
+     /* #4caf50; */
+    color: white;
+  }
+  
+  .custom-input::placeholder {
+    color: #747272; 
+    opacity: 1; 
+  }

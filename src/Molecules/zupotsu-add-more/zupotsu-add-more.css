@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.add-more-items-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.add-more-items-scroll::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background: var(--Gray-5, #f2f2f2);
+}
+
+/* Handle */
+.add-more-items-scroll::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: var(--Gray-5, #e0e0e0);
+}
+
+/* Handle on hover */
+.add-more-items-scroll::-webkit-scrollbar-thumb:hover {
+  border-radius: 100px;
+  background: var(--Gray-5, #e0e0e0);
+}
+
+.dropdown-open {
+  overflow: auto !important; /* Ensure override */
+}

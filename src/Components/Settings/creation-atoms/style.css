@@ -1,0 +1,140 @@
+ Variables
+:root {
+  --blue: #687bf7;
+  --lightblue: #72d9ef;
+  --cyan: #79e7eb;
+}
+
+
+Variables
+:root {
+  --blue: #687bf7;
+  --lightblue: #72d9ef;
+  --cyan: #79e7eb;
+}
+
+
+/* body {
+  background: #1d1e21;
+  font-size: 3.5vw;
+} */
+
+/* @media (min-width: 900px) {
+  body {
+    font-size: 2vw;
+  }
+} */
+
+.dragDropSection {
+  max-width: 15em;
+  margin: 10vh auto 0;
+  background: whitesmoke;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  box-shadow: 4px 4px 50px rgba(104, 123, 247, 0);
+  transition: box-shadow 100ms linear;
+}
+
+.dragDropSection:hover {
+  box-shadow: 4px 4px 50px rgba(104, 123, 247, 0.6);
+}
+
+.dragging {
+  opacity: 0.5;
+  border: 1px dashed rgb(130, 126, 126);
+  transition: opacity 0.3s ease-in-out; /* Example: Smooth transition */
+
+}
+
+
+.dragDropSection ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.droppingSection {
+  border-radius: 10px;
+}
+
+.dragDropSection li {
+  display: flex;
+  align-items: center;
+  cursor: move;
+  line-height: 1;
+  margin-bottom: 0.1em;
+  border-radius: 5px;
+}
+
+.dropArea {
+  color: white !important;
+  /* background: rgb(245, 243, 243) !important; */
+  background: #FAFAFA;
+  position: relative;
+  border-style: solid;
+}
+
+.dropArea::before {
+  content: "Drop Here";
+  color: var(--blue);
+  font-size: 0.5em;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed var(--blue);
+  border-radius: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dragDropSection li.dropArea span {
+  display: none;
+}
+
+.dragDropSection li.dropArea p {
+  margin-left: 1em;
+}
+
+.dragDropSection li:hover {
+  background: linear-gradient(to left, var(--blue), var(--lightblue));
+  color: white;
+}
+
+.dragDropSection li:hover span {
+  background-color: var(--cyan);
+}
+
+.dragDropSection li span {
+  display: inline-block;
+  margin-right: 1em;
+  margin-left: 0.5em;
+  background-color: var(--lightblue);
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: bold;
+  transition: background-color 100ms linear;
+}
+
+.dragDropSection li p {
+  transition: margin-left 50ms ease-in-out;
+}
+
+.dragDropSection li i {
+  margin-left: auto;
+  margin-right: 1em;
+}
+
+@keyframes fadeIn { 
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

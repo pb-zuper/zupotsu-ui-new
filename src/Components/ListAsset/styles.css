@@ -1,0 +1,175 @@
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin: 0 auto; */
+    border-radius: 20px;
+    margin-top: 10px;
+    background: #000;
+}
+
+.carouselItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slideImage {
+    height:30vh;
+    width:100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.carouselContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* margin: 0 auto; */
+    border-radius: 10px;
+    margin-top: 10px;
+    background: #000;
+    height:35vh;
+
+}
+
+.slideImage2{
+    height:35vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.rotating-image {
+    animation: rotateAnimation 6s linear infinite;
+  }
+
+  .rotating-image2 {
+    animation: rotateAnimation2 6s linear infinite;
+  }
+
+  .ecarouselContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(90deg, #231C1C 26.34%, rgba(69, 1, 0, 0) 74.83%)
+}
+
+.ecarouselItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.eslideImage {
+    height:45vh;
+    min-height:350px;
+    max-height:400px;
+    width:100%;
+    object-fit:fill;
+    object-position:100% 0%
+}
+
+.newcarouselContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: "#231C1C";
+    
+}
+.newcarouselItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background: "#231C1C";
+}
+
+.newslideImage {
+    height:40vh;
+    min-height:350px;
+    width:100%;
+    object-fit:cover;
+    z-index: 1;
+    background: "#231C1C";
+}
+
+  
+@keyframes rotateAnimation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+@keyframes rotateAnimation2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+    }
+
+@media screen and (min-width:320px) and (max-width:800px){
+    .carouselContainer2 {
+    width:100%;
+    height:20vh
+    }
+    .slideImage2{
+        height:20vh;
+        object-fit: fill;
+        border-radius: 10px;
+    }
+    .eslideImage {
+        height:25vh;
+        min-height:200px;
+        max-height:250px;
+        width:100%;
+        object-fit:fill;
+        object-position:100% 0%
+    }
+    .newslideImage {
+        height:13vh;
+        min-height:200px;
+        width:100%;
+        object-fit:cover;
+    }
+}
+
+
+@media screen and (min-width:700px) and (max-width:800px){
+    .carouselContainer2 {
+    width:100%;
+    height:25vh
+    }
+    .slideImage2{
+        height:25vh;
+        object-fit: fill;
+        border-radius: 10px;
+    }
+    .eslideImage {
+        height:25vh;
+        min-height:300px;
+        max-height:350px;
+        width:100%;
+        object-fit:fill;
+        object-position:100% 0%
+    }
+    .newslideImage {
+        height:13vh;
+        min-height:300px;
+        width:100%;
+        object-fit:cover;
+    }
+}

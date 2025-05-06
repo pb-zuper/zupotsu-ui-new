@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.legend {
+  background-color: red;
+}
+
+.carousel.carousel-slider {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  /* height: 480px; */
+}
+
+#shortCoro .carousel.carousel-slider {
+  height: 0;
+  padding-bottom: 84%; /* Aspect ratio: 480:200.66 */
+  position: relative;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {} */
+
+.carousel .slider.animated {
+  transition: all 0.35s ease-in-out;
+  height: 480px;
+}
+
+.zoputsu-intro-card-image-style {
+  object-fit: fill;
+  height: 480px;
+}
+
+.carousel .slide .legend {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 25px;
+  right: 80px;
+  width: 90%;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 1.25;
+}
+
+.intro_desc {
+  width: 60%;
+  margin-bottom: 5vw;
+  margin-top: 29px;
+  background-size: cover;
+}
+
+/* .first_font {
+  margin-bottom: 30px !important;
+} */
+
+.react-responsive-carousel .carousel .slider-wrapper img {
+  height: 350px;
+  object-fit: cover;
+  /* Ensure the image covers the entire area */
+}
+
+.clear:hover {
+  color: #e20b18;
+}
+
+@media (max-width: 995px) {
+  .carousel.carousel-slider {
+    height: 450px;
+  }
+
+  .zoputsu-intro-card-image-style {
+    object-fit: fill;
+    height: 450px;
+  }
+
+  .intro_desc {
+    width: 70%;
+    margin-top: 7%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 793px) {
+  .carousel.carousel-slider {
+    height: 394px;
+  }
+
+  .zoputsu-intro-card-image-style {
+    object-fit: fill;
+    height: 394px;
+  }
+
+  .intro_desc {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .carousel .slide .legend {
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel.carousel-slider {
+    height: 315px;
+  }
+
+  .zoputsu-intro-card-image-style {
+    object-fit: fill;
+    height: 315px;
+  }
+
+  .intro_desc {
+    width: 70%;
+  }
+
+  .carousel .slide .legend {
+    top: 0%;
+  }
+  .carousel.carousel-slider {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 1024px) {
+  .carousel .slide .legend {
+    padding: 0px;
+  }
+
+  /* .first_font {
+    margin-bottom: 0 !important;
+  } */
+  .intro_desc {
+    width: 57%;
+    margin: 0;
+    margin-top: 13px;
+  }
+
+  .idesc {
+    line-height: 25px !important;
+    margin-top: 5px !important;
+  }
+
+  .carousel.carousel-slider {
+    height: 336px;
+  }
+
+  .zoputsu-intro-card-image-style {
+    object-fit: fill;
+    height: 336px;
+  }
+}
+
+@media (max-width: 430px) and (max-width: 932px) {
+  .carousel .slide .legend {
+    padding: 0px;
+  }
+
+  .intro_desc {
+    width: 90%;
+    margin: 0;
+  }
+
+  /* .first_font {
+    line-height: 25px !important;
+    padding-top: 13px;
+    margin-bottom: 0 !important;
+  } */
+  .second_font {
+    display: block !important;
+  }
+
+  .idesc {
+    line-height: 15px !important;
+    margin-top: 5px !important;
+  }
+
+  .interest {
+    margin-top: 15px !important;
+    padding: 6px !important;
+    height: 41px !important;
+  }
+
+  .carousel.carousel-slider {
+    height: 217px;
+  }
+
+  .zoputsu-intro-card-image-style {
+    object-fit: fill;
+    height: 217x;
+  }
+}
+
+@media (max-width: 414px) and (max-width: 896px) {
+  .carousel .slide .legend {
+    padding: 0px;
+  }
+
+  .intro_desc {
+    width: 90%;
+    margin: 0;
+  }
+
+  /* .first_font {
+    line-height: 25px !important;
+    padding-top: 13px;
+    margin-bottom: 0 !important;
+  } */
+  .second_font {
+    display: block !important;
+  }
+
+  .idesc {
+    line-height: 15px !important;
+    margin-top: 5px !important;
+  }
+
+  .interest {
+    margin-top: 15px !important;
+    padding: 6px !important;
+    height: 41px !important;
+  }
+
+  .carousel.carousel-slider {
+    height: 217px;
+  }
+
+  .zoputsu-intro-card-image-style {
+    object-fit: fill;
+    height: 217px;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 667px) {
+  .carousel .slide .legend {
+    padding: 0px;
+  }
+
+  .intro_desc {
+    width: 90%;
+    margin: 0;
+  }
+
+  /* .first_font {
+    line-height: 25px !important;
+    padding-top: 13px;
+    margin-bottom: 0 !important;
+  } */
+  .second_font {
+    display: block !important;
+  }
+
+  .idesc {
+    line-height: 15px !important;
+    margin-top: 5px !important;
+  }
+
+  .interest {
+    margin-top: 15px !important;
+    padding: 6px !important;
+    height: 34px !important;
+  }
+
+  .carousel.carousel-slider {
+    height: 227px;
+  }
+
+  .zoputsu-intro-card-image-style {
+    object-fit: fill;
+    height: 227px;
+  }
+
+  .thumb-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+.follow_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.facebook {
+  /* padding: 10px; */
+}
+
+.social-icons img {
+  /* Your default styles for the images go here */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Example: Increase the size on hover */
+  /* You can change the src attribute or apply other styles for the hover effect */
+}
+
+/* For example, changing the image source on hover */
+/* .social-icons img:hover[src='${Instagram}'] {
+  content: url('./../../../Assets/Instagram.svg');
+}
+
+.social-icons img:hover[src='${Facebook}'] {
+  content: url('./../../../Assets/Facebook.svg');
+}
+
+.social-icons img:hover[src='${Linkedin}'] {
+  content: url('./../../../Assets/Linkedin.svg');
+} */
+
+.social-media-link-hover:hover {
+  filter: invert(24%) sepia(79%) saturate(6367%) hue-rotate(348deg)
+    brightness(85%) contrast(110%);
+}

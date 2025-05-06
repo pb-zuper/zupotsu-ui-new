@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+/* Your other CSS styles go here */
+
+/* Your other CSS styles go here */
+
+.footer_container {
+  background-color: black;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer_section1 {
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+.sub-section2 {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-section3 {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.second-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.separator {
+  border: 1px solid white;
+  margin: 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (min-width: 768px) {
+  .first-section {
+    flex-direction: row;
+  }
+
+  .sub-section {
+    width: 30%;
+    /* Reset width to 30% for larger screens */
+    margin-bottom: 0;
+    /* Reset margin */
+  }
+}
+
+.footer_text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: '#BDBDBD';
+}
+
+.copyRight_text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: '#828282';
+}
+
+.follow_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.facebook {
+  padding: 10px;
+}
+
+.social-icons img {
+  /* Your default styles for the images go here */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Example: Increase the size on hover */
+  /* You can change the src attribute or apply other styles for the hover effect */
+}
+
+/* For example, changing the image source on hover */
+.social-icons img:hover[src='${Instagram}'] {
+  content: url('./../../../Assets/Instagram.svg');
+}
+
+.social-icons img:hover[src='${Facebook}'] {
+  content: url('./../../../Assets/Facebook.svg');
+}
+
+.social-icons img:hover[src='${Linkedin}'] {
+  content: url('./../../../Assets/Linkedin.svg');
+}

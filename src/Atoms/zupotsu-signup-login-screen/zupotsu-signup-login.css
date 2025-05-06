@@ -1,0 +1,21 @@
+.tabs-container {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.tab.selected {
+  text-decoration: underline;
+  color: red;
+}
+
+.hide-scroll-stepper::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}

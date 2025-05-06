@@ -1,0 +1,28 @@
+.opportunity-accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.opportunity-accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.team-listing-scroll::-webkit-scrollbar {
+  /* height: 10px; */
+  width: 0;
+}
+
+.listing-radio-container input[type='radio'] {
+  display: inline;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  /* appearance: none; */
+  border: 1px solid #e0e0e0;
+  /* Border color for the outer circle */
+  border-radius: 50%;
+  /* Make it a circle */
+}
